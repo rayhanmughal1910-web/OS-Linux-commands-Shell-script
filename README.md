@@ -42,13 +42,12 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![catfile1](./img/01-cat%20file1.png)
-![catfile1](./img/catfile1.png)
+![Alt text](<img/Screenshot at 2026-02-25 09-02-36.png>)
 
 
 cat < file2
 ## OUTPUT
-
+![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
 
 
 
@@ -60,7 +59,7 @@ cmp file1 file2
  
 comm file1 file2
  ## OUTPUT
- 
+
 
 
  
@@ -1160,3 +1159,6 @@ fi
 
 # RESULT:
 The Commands are executed successfully.
+
+
+[def]: <img/Screenshot at 2026-02-25 08-45-21.png>
