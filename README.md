@@ -49,7 +49,7 @@ cat < file2
 ## OUTPUT
 ![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
 
-
+![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
 
 # Comparing Files
 cmp file1 file2
