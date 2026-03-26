@@ -47,26 +47,29 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
+
 
 ![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
+
+
+
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 06-53-10.png>)
  
 comm file1 file2
  ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 06-54-41.png>)
 
  
 diff file1 file2
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 06-55-26.png>)
 
 
 #Filters
@@ -91,7 +94,7 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-05-40.png>)
 
 
 
@@ -99,14 +102,14 @@ cut -c1-3 file11
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-07-28.png>)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-08-11.png>)
 
 
 cat < newfile 
@@ -122,13 +125,13 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-12-10.png>)
 
 
 grep hello newfile 
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-13-09.png>)
 
 
 
@@ -136,7 +139,7 @@ grep hello newfile
 grep -v hello newfile 
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-13-53.png>)
 
 
 
@@ -144,7 +147,7 @@ grep -v hello newfile
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-15-17.png>)
 
 
 
@@ -152,7 +155,7 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-16-35.png>)
 
 
 
@@ -160,14 +163,15 @@ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 
-
-
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-18-19.png>)
+![Alt text](<img1/Screenshot at 2026-03-26 07-18-44.png>)
+![Alt text](<img1/Screenshot at 2026-03-26 07-19-00.png>)
+![Alt text](<img1/Screenshot at 2026-03-26 07-19-16.png>)
 
 grep -w -n world newfile   
 ## OUTPUT
 
-
+![Alt text](<img1/Screenshot at 2026-03-26 07-20-17.png>)
 
 cat < newfile 
 ```
