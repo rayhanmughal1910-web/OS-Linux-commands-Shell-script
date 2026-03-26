@@ -171,7 +171,7 @@ grep -w -n world newfile
 
 ![Alt text](img1/image18.png)
 
-cat < newfile 
+cat > newfile 
 ```
 Hello world
 hello world
@@ -181,7 +181,7 @@ Linux is best in this World
 ^d
 ```
 
-cat > newfile
+cat < newfile
 ```
 Hello world
 hello world
@@ -193,14 +193,14 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image19.png)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image20.png)
 
 
 
@@ -208,7 +208,7 @@ egrep -w '(H|h)ell[a-z]' newfile
 ## OUTPUT
 
 
-
+![Alt text](img1/image21.png)
 
 
 
@@ -216,26 +216,26 @@ egrep '(^hello)' newfile
 ## OUTPUT
 
 
-
+![Alt text](img1/image22.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image23.png)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image24.png)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image25.png)
 
 
 
@@ -243,23 +243,24 @@ egrep '[1-9]' newfile
 ## OUTPUT
 
 
-
+![Alt text](img1/image26.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image27.png)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
-
+![Alt text](img1/image28.png)
 
 egrep l{2} newfile
 ## OUTPUT
 
+![Alt text](img1/image29.png)
 
 
 
@@ -267,7 +268,7 @@ egrep l{2} newfile
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
-
+![Alt text](img1/image30.png)
 
 
 cat > file23
@@ -287,21 +288,21 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+![Alt text](img1/image31.png)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![Alt text](img1/image32.png)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](img1/image33.png)
 
 
 
@@ -309,75 +310,76 @@ sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
 
-
+![Alt text](img1/image34.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
 
-
+![Alt text](img1/image35.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![Alt text](img1/image36.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
-
+![Alt text](img1/image37.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](img1/image38.png)
 
 
 seq 10 
 ## OUTPUT
 
-
+![Alt text](img1/image39.png)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![Alt text](img1/image40.png)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![Alt text](img1/image41.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](img1/image42.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](img1/image43.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![Alt text](img1/image44.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](img1/image45.png)
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![Alt text](img1/image46.png)
 
 #Sorting File content
 cat > file21
@@ -390,7 +392,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](img1/image47.png)
 
 cat > file22
 ```
@@ -404,12 +406,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+![Alt text](img1/image48.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+
+![Alt text](img1/image49.png)
 
 cat < urllist.txt
 ```
@@ -426,19 +430,19 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![Alt text](img1/image50.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-
+![Alt text](img1/image51.png)
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
-
+![Alt text](img1/image52.png)
+![Alt text](img1/image53.png)
 mkdir backupdir
  
 mv backup.tar backupdir
@@ -448,18 +452,25 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![Alt text](img1/image54.png)
+![Alt text](img1/image55.png)
 
 tar -xvf backup.tar
 ## OUTPUT
+
+![Alt text](img1/image56.png)
+![Alt text](img1/image57.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+
+ ![Alt text](img1/image58.png)
+
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Alt text](img1/image59.png)
  
 # Shell Script
 ```
@@ -469,7 +480,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![Alt text](img1/image60.png)
  
 cat << stop > herecheck.txt
 ```
@@ -481,7 +492,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![Alt text](img1/image61.png)
 
 cat < scriptest.sh 
 ```bash
@@ -520,23 +531,24 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+![Alt text](img1/image62.png)
+ ![Alt text](img1/image63.png)
+
 ls file1
 ## OUTPUT
-
+![Alt text](img1/image64.png)
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
+./one bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![Alt text](img1/image65.png)
 abcd
  
 echo $?
  ## OUTPUT
-
+![Alt text](img1/image66.png)
 
  
 # mis-using string comparisons
