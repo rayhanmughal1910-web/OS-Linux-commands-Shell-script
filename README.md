@@ -42,14 +42,15 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![Alt text](<img/Screenshot at 2026-02-25 09-02-36.png>)
+
+![Alt text](img1/image1.png)
 
 
 cat < file2
 ## OUTPUT
 
 
-![Alt text](<img/Screenshot at 2026-02-25 09-04-13.png>)
+![Alt text](img1/image2.png)
 
 
 
@@ -58,19 +59,21 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 06-53-10.png>)
+![Alt text](img1/image3.png)
  
 comm file1 file2
  ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 06-54-41.png>)
 
+
+![Alt text](img1/image4.png)
  
 diff file1 file2
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 06-55-26.png>)
 
+
+![Alt text](img1/image5.png)
 
 #Filters
 
@@ -94,7 +97,7 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-05-40.png>)
+![Alt text](img1/image6.png)
 
 
 
@@ -102,14 +105,14 @@ cut -c1-3 file11
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-07-28.png>)
+![Alt text](img1/image7.png)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-08-11.png>)
+![Alt text](img1/image8.png)
 
 
 cat < newfile 
@@ -125,53 +128,48 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-12-10.png>)
-
+![Alt text](img1/image9.png)
 
 grep hello newfile 
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-13-09.png>)
-
+![Alt text](img1/image10.png)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-13-53.png>)
-
+![Alt text](img1/image11.png)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-15-17.png>)
-
+![Alt text](img1/image12.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-16-35.png>)
-
+![Alt text](img1/image13.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-18-19.png>)
-![Alt text](<img1/Screenshot at 2026-03-26 07-18-44.png>)
-![Alt text](<img1/Screenshot at 2026-03-26 07-19-00.png>)
-![Alt text](<img1/Screenshot at 2026-03-26 07-19-16.png>)
+![Alt text](img1/image14.png)
+![Alt text](img1/image15.png)
+![Alt text](img1/image16.png)
+![Alt text](img1/image17.png)
 
 grep -w -n world newfile   
 ## OUTPUT
 
-![Alt text](<img1/Screenshot at 2026-03-26 07-20-17.png>)
+![Alt text](img1/image18.png)
 
 cat < newfile 
 ```
